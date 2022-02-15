@@ -62,19 +62,64 @@
 
 .nyhet_container {
   background-color: bisque;
-  height: 200px;
+  height: 400px;
   border-radius: 10px;
   margin-left: 40px;
   margin-right: 40px;
   display: flex;
   justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
+  animation-duration: 10s;
+  animation-name: transitionnews;
+  animation-iteration-count: infinite;
+  overflow: hidden;
+}
+
+#nyhet_text {
+  animation-name: slidetext;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+#nyhet_bild {
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.nyhet_headline {
+  padding: 8px;
+  margin: 8px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .headline {
   padding: 8px;
   margin: 8px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes slidetext {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+}
+
+@keyframes transitionnews {
+  25%   {background-color: blueviolet;}
+
+  50%   {background-color: brown;}
+
+  75%   {background-color: aqua;}
+
+  100%  {background-color: aquamarine;} 
 }
 
 footer {
@@ -100,3 +145,10 @@ footer {
   column-gap: 50px;
   border-radius: 8px;
 }
+
+#meny_knapp {
+  background-color: blueviolet;
+  cursor: pointer;
+  border: none;
+}
+

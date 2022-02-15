@@ -32,8 +32,8 @@
     <h1 class="headline">Nyheter i börsen</h1>
     <div class="nyhet_main_container">
       <div class="nyhet_container" id="nyhet_1">
-        <img src="img\får3.jpg" alt="får" height="100">
-        <h3>Warren Buffett käkade ägg till frukost !!!!!</h3>
+        <img id="nyhet_bild" src="img\får3.jpg" alt="får" height="200">
+        <p id="nyhet_text" class="nyhet_headline">Warren Buffett käkade ägg till frukost !!!!!</p>
       </div>
       <div class="nyhet_container" id="nyhet_2"></div>
       <div class="nyhet_container" id="nyhet_3"></div>
@@ -46,15 +46,24 @@
       <div class="button" id="hem_knapp">
         <img src="img\2x\outline_home_black_24dp.png" alt="hem knapp">
       </div>
-      <div class="button" id="konto_knapp">
+      <button class="button" id="konto_knapp">
         <img src="img\2x\outline_account_balance_wallet_black_24dp.png" alt="ditt konto">
-      </div>
+
+      </button>
       <div class="button" id="sök_knapp">
         <img src="img\2x\outline_search_black_24dp.png" alt="sök knapp">
       </div>
-      <div class="button" id="meny_knapp">
+      <button onclick="myFunction()" class="button" id="meny_knapp">
         <img src="img\2x\outline_menu_black_24dp.png" alt="meny">
-      </div>
+        <div id="meny_content">
+          <ul id="meny_optionss">
+            <li class="meny_item">Kundservice</li>
+            <li class="meny_item">Spara pengar</li>
+            <li class="meny_item">Hitta fonder</li>
+            <li class="meny_item">Hitta aktier</li>
+          </ul>
+        </div>
+      </button>
   </div>
   </footer>
 
