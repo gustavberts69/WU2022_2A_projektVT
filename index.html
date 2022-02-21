@@ -32,12 +32,14 @@
     <h1 class="headline">Nyheter i börsen</h1>
     <div class="nyhet_main_container">
       <div class="nyhet_container" id="nyhet_1">
-        <img id="nyhet_bild" src="img\får3.jpg" alt="får" height="200">
+        <img class="nyhet_bild" src="img\får3.jpg" alt="får" height="75%">
+        <img class="nyhet_bild" src="img/planta.jpg" alt="får" height="75%">
+        <img class="nyhet_bild" src="img\ögon.jpg" alt="får" height="75%">
+        <img class="nyhet_bild" src="img\vete.jpg" alt="får" height="75%">
         <p id="nyhet_text" class="nyhet_headline">Warren Buffett käkade ägg till frukost !!!!!</p>
       </div>
-      <div class="nyhet_container" id="nyhet_2"></div>
-      <div class="nyhet_container" id="nyhet_3"></div>
     </div>
+    <script src="js/script.js"></script>
   </section>
 
   <!----------------------------FOOTER---------------------------->
@@ -53,16 +55,23 @@
       <div class="button" id="sök_knapp">
         <img src="img\2x\outline_search_black_24dp.png" alt="sök knapp">
       </div>
-      <button onclick="myFunction()" class="button" id="meny_knapp">
-        <img src="img\2x\outline_menu_black_24dp.png" alt="meny">
-        <div id="meny_content">
-          <ul id="meny_optionss">
-            <li class="meny_item">Kundservice</li>
-            <li class="meny_item">Spara pengar</li>
-            <li class="meny_item">Hitta fonder</li>
-            <li class="meny_item">Hitta aktier</li>
+      <button onclick="openMenu()" class="button" id="meny_knapp">
+        <img id="meny" src="img\2x\outline_menu_black_24dp.png" alt="meny">
+        
+        <div id="menu_content">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()" >bruh</a>
+
+          <ul id="menu_options">
+            <li class="menu_item">Kundservice</li>
+            <li class="menu_item">Spara pengar</li>
+            <li class="menu_item">Hitta fonder</li>
+            <li class="menu_item">Hitta aktier</li>
           </ul>
+          <script src="js/script.js"></script>
+
         </div>
+
+        <script src="js/script.js"></script>
       </button>
   </div>
   </footer>
