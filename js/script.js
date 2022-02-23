@@ -2,8 +2,8 @@ var slideIndex = 0;
 carousel();
 
 function carousel() {
-  var i;
-  var x = document.getElementsByClassName("nyhet_bild");
+  let i;
+  const x = document.getElementsByClassName("nyhet_bild");
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
