@@ -5,12 +5,15 @@
 }
 
 :root {
-  --main-color: green;
+  --main-color: grey;
   --button-color: green;
   --dark-color: green;
   --ligth-color: green;
 }
 
+body {
+  background-color: darkslategray;
+}
 
 #header_container {
   height: 4rem;
@@ -29,20 +32,44 @@
   margin-right: 20px;
 } 
 
+#main_container {
+  width: 100%;
+  height: auto;
+  background-color: darkslategray;
+}
+
 #dina_nyheter_container {
   display: flex;
   height: 120px;
+  width: 100%;
   justify-content: flex-start;
   column-gap: 20px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+#dina_nyheter_container::-webkit-scrollbar {
+  height: 0;
+  width: 0;
 }
 
 .dina_nyheter {
   border-radius: 8px;
   background-color: bisque;
   height: 120px;
-  width: 250px;
+  width: 200px;
   text-align: center;
   margin-left: 10px;
+  flex: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dina_nyheter_img {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
 }
 
 .dina_nyheter_text {
@@ -53,26 +80,31 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  height: auto;
+  height: max-content;
   width: 100%;
-  gap: 5vh;
 }
 
 .nyhet_container {
-  background-color: bisque;
   height: 400px;
+  width: 500px;
   border-radius: 10px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-inline-start: 40px;
+  margin-bottom: 5vh;
   display: flex;
   justify-content: center;
   justify-content: flex-start;
   flex-direction: column;
 }
 
-nyhet_bild {
-  border-radius: 8px;
-  padding: 10px;
+#nyhet_4 {
+  margin-bottom: 23%;
+}
+
+.linje {
+  height: 1px;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: grey;
 }
 
 .nyhet_headline {
@@ -81,14 +113,13 @@ nyhet_bild {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-img {
+.nyhet_bild {
   border-radius: 8px;
   margin: 9px;
 }
 
 .headline {
   padding: 8px;
-  margin: 8px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -98,7 +129,7 @@ footer {
   bottom: 0;
   width: 100%;
   height: 13%;
-  background-color: blueviolet;
+  background-color: aquamarine;
   text-align: center;
 }
 
@@ -114,9 +145,10 @@ footer {
   width: 50px;
   column-gap: 50px;
   border-radius: 8px;
-  background-color: blueviolet;
+  object-fit: contain;
   cursor: pointer;
   border: none;
+  background-color: aquamarine;
 }
 
 #menu_content {
@@ -154,4 +186,54 @@ footer {
   right: 45px;
   font-size: 60px;
   text-decoration: none;
+}
+
+#searchbar {
+  height: 50px;
+  width: 100%;
+  display: flex; 
+  justify-content: flex-start;
+}
+
+#searchbar input[type=text] {
+  padding: 6px;
+  width: 100%;
+  border: none;
+  font-size: 1.5rem;
+  border-radius: 2px;
+
+}
+
+#tillbaka {
+  height: 100%;
+  width: 60px;
+}
+
+.nav {
+  background-color: rgb(63, 104, 104);
+}
+
+#tillbaka_img {
+  height: 100%;
+  width: 100%;
+}
+
+#recent_searches {
+  display: flex;
+  flex-direction: column;
+}
+
+#search_headline {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: medium;
+}
+
+#list_searches {
+  margin-left: 15px;
+  list-style: none;
+}
+
+.list_item {
+  margin-bottom: 10px;
 }
