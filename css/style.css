@@ -237,3 +237,72 @@ footer {
 .list_item {
   margin-bottom: 10px;
 }
+
+::-webkit-scrollbar-thumb {
+  background-color: grey;
+  opacity: 50%;
+}
+
+::-webkit-scrollbar {
+  width: 12.5px;
+}
+
+::-webkit-scrollbar-track {
+  z-index: 1;
+}
+
+#total_value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 3rem;
+  position: relative;
+  height: 200px;
+  width: 400px;
+  border: 1px solid rgba(59, 58, 58, 0,46);
+  border-radius: 20px;
+  box-shadow: -10px 5px 10px gray;
+  top: 0;
+  transition: top ease 0.5s;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+#total_value:hover {
+  top: -20px;
+}
+
+#konto_header {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#main_wrapper_konto {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ekonomi_lista_wrapper {
+  width: 85%;
+  border: 1px solid grey;
+  box-shadow: 5px grey;
+  border-radius: 2px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.ekonomi_lista {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ekonomi_item {
+  width: 90%;
+  height: 75px; 
+}

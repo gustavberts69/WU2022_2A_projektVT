@@ -5,27 +5,46 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stockident</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+  <!----------------------------HEADER---------------------------->
+  <header id="header_konto">
+    <h1>Ditt konto</h1>
+    <ul id="konto_header">
+      <li class="list_item_konto"><p>Värdepapper</p></li>
+      <li class="list_item_konto"><p>Transaktioner</p></li>
+      <li class="list_item_konto"><p>Ordrar</p></li>
+    </ul>
+  </header>
+
   <!----------------------------MAIN---------------------------->
-  <section id="main_wrapper">
-    <div id="totala_värde">
-      <h1>Totala värde</h1>
-      <p>2 045 879</p>
+  <section id="main_wrapper_konto">
+    
+    <div id="total_value_wrapper">
+      <div id="total_value">
+        <h2>Totala värde</h2>
+        <p>2 045 879</p>
+      </div>  
     </div>
 
-    <div id="aktie_lista" class="ekonomi_lista">
-      <ul>
-        <li class="aktie_item"><p>Monster Beverage Corp</p></li>
-      </ul>
-    </div>
-
-    <div id="fond_lista" class="ekonomi_lista">
-      <ul>
-        <li class="fond_item"></li>
-      </ul>
-    </div>
+      <h3>Aktier</h3>
+      <div id="aktie_lista" class="ekonomi_lista_wrapper">
+        <h3>Dina aktier</h3>
+        <ul class="ekonomi_lista">
+          <li class="ekonomi_item"><h4>Monster Beverage Corp</h4></li>
+          
+        </ul>
+      </div>
+      
+      <h3>Fonder</h3>
+      <div id="fond_lista" class="ekonomi_lista_wrapper">
+        <h3>Dina fonder</h3>
+        <ul class="ekonomi_lista">
+          <li class="ekonomi_item">Monster Beverage Corp</li>
+        </ul>
+      </div>
 
   </section>
 
