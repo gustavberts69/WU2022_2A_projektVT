@@ -2,22 +2,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: rgb(247, 247, 247);
 }
 
 :root {
-  --main-color: grey;
+  --main-color: #012E40;
   --button-color: green;
-  --dark-color: green;
+  --dark-color: #011526;
   --ligth-color: green;
 }
 
 body {
-  background-color: darkslategray;
+  background-color: var(--main-color);
 }
 
 #header_container {
   height: 4rem;
-  background-color: aquamarine;
+  background-color: var(--dark-color);
 }
 
 #nav_container {
@@ -35,7 +36,7 @@ body {
 #main_container {
   width: 100%;
   height: auto;
-  background-color: darkslategray;
+  background-color: var(--main-color);
 }
 
 #dina_nyheter_container {
@@ -55,7 +56,6 @@ body {
 
 .dina_nyheter {
   border-radius: 8px;
-  background-color: bisque;
   height: 120px;
   width: 200px;
   text-align: center;
@@ -121,6 +121,7 @@ body {
 .headline {
   padding: 8px;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
 }
 
 footer {
@@ -129,7 +130,7 @@ footer {
   bottom: 0;
   width: 100%;
   height: 13%;
-  background-color: aquamarine;
+  background-color: var(--dark-color);
   text-align: center;
 }
 
@@ -148,7 +149,7 @@ footer {
   object-fit: contain;
   cursor: pointer;
   border: none;
-  background-color: aquamarine;
+  background-color: var(--dark-color);
 }
 
 #menu_content {
@@ -255,22 +256,24 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 2rem;
   position: relative;
   height: 200px;
   width: 400px;
   border: 1px solid rgba(59, 58, 58, 0,46);
   border-radius: 20px;
-  box-shadow: -10px 5px 10px gray;
+  box-shadow: -10px 5px 10px black;
   top: 0;
-  transition: top ease 0.5s;
+  transition: top ease 0.3s;
   margin-top: 30px;
   margin-bottom: 40px;
+  gap: 1rem;
 }
 
 #total_value:hover {
-  top: -20px;
+  top: -10px;
 }
 
 #konto_header {
@@ -284,6 +287,7 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column;
+  height: fit-content;
 }
 
 .ekonomi_lista_wrapper {
@@ -305,4 +309,10 @@ footer {
 .ekonomi_item {
   width: 90%;
   height: 75px; 
+}
+
+.list_item_konto {
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 5px;
 }
