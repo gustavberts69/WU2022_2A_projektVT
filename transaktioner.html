@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stockident</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!----------------------------HEADER---------------------------->
+    <header id="header_konto">
+      <h1 class="headline">Ditt konto</h1>
+      <ul id="konto_header">
+        <li class="list_item_konto"><p>Värdepapper</p></li>
+        <li class="list_item_konto"><p>Transaktioner</p></li>
+        <li class="list_item_konto"><p>Ordrar</p></li>
+      </ul>
+    </header>
+
+    <!----------------------------MAIN---------------------------->
+    <section id="main_wrapper_trans">
+      <ul id="trans_list">
+        <li class="list_item_trans">Sätt in pengar</li>
+        <li class="list_item_trans">Överför pengar</li>
+        <li class="list_item_trans">Sätt upp månadssparande</li>
+      </ul>
+    </section>
+    <!----------------------------FOOTER---------------------------->
+    <footer>
+      <div id="menu_bar_container">
+        <div class="button" id="hem_knapp">
+          <img  src="img\2x\outline_home_white_24dp.png" alt="hem knapp">
+        </div>
+        <button class="button" id="konto_knapp">
+          <a href="konto.html"><img  src="img\2x\outline_account_circle_white_24dp.png" alt="ditt konto"></a>
+  
+        </button>
+        <div class="button" id="sök_knapp">
+          <a href="sök.html"><img src="img\2x\outline_search_white_24dp.png" alt="sök knapp"></a>
+        </div>
+        <button onclick="openMenu()" class="button" id="meny_knapp">
+          <img  id="meny" src="img\2x\outline_menu_white_24dp.png" alt="meny">
+        </button>
+        <div id="menu_content">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()" >bruh</a>
+  
+          <ul id="menu_options">
+            <li class="menu_item">Kundservice</li>
+            <li class="menu_item">Spara pengar</li>
+            <li class="menu_item">Hitta fonder</li>
+            <li class="menu_item">Hitta aktier</li>
+          </ul>
+          <script src="js/script.js"></script>
+  
+        </div>
+      </div>
+    </footer>
+
+</body>
+</html>

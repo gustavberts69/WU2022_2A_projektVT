@@ -7,9 +7,9 @@
 
 :root {
   --main-color: #012E40;
-  --button-color: green;
+  --button-color: #011526;
   --dark-color: #011526;
-  --ligth-color: green;
+  --ligth-color: #026773;
 }
 
 body {
@@ -149,7 +149,7 @@ footer {
   object-fit: contain;
   cursor: pointer;
   border: none;
-  background-color: var(--dark-color);
+  background-color: var(--button-color);
 }
 
 #menu_content {
@@ -211,7 +211,7 @@ footer {
 }
 
 .nav {
-  background-color: rgb(63, 104, 104);
+  background-color: var(--ligth-color);
 }
 
 #tillbaka_img {
@@ -287,7 +287,7 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: fit-content;
+  height: 100%;
 }
 
 .ekonomi_lista_wrapper {
@@ -295,12 +295,20 @@ footer {
   border: 1px solid grey;
   box-shadow: 5px grey;
   border-radius: 2px;
-  height: auto;
-  margin-bottom: 20px;
+  height: 100%;
+}
+
+#aktie_lista {
+  margin-bottom: 30px;
+}
+
+#fond_lista {
+  margin-bottom: 100px;
 }
 
 .ekonomi_lista {
   list-style: none;
+  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -309,10 +317,76 @@ footer {
 .ekonomi_item {
   width: 90%;
   height: 75px; 
+  margin-bottom: 20px;
 }
 
 .list_item_konto {
   border: 1px solid grey;
   padding: 10px;
   border-radius: 5px;
+  text-decoration-style: none;
+}
+
+.ekonomi_box {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+#percentage {
+  color: green;
+}
+
+.ekonomi_box_item {
+  margin-left: 30px;
+}
+
+.dropdown_time_select {
+  position: absolute;
+  margin-left: 300px;
+  margin-top: 17px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  transition: ease 0.5s;
+  background-color: #011526;
+}
+
+#dropdown_time_select_content {
+  display: none;
+  padding: 5px;
+  width: 80px;
+  border-radius: 5px;
+  align-self: flex-start;
+  transition: ease 0.5s;
+  z-index: 1;
+  
+}
+
+.dropdown_time_select:hover #dropdown_time_select_content {
+  display: block;
+}
+
+.time_lista {
+  list-style: none;
+}
+
+.time_item {
+  padding: 2px;
+}
+
+#trans_list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+.list_item_trans {
+  list-style: none;
+  margin-left: 50px;
 }
