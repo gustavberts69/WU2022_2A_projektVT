@@ -381,12 +381,26 @@ footer {
 
 #trans_list {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
+  width: 100%;
 }
 
 .list_item_trans {
   list-style: none;
-  margin-left: 50px;
+  margin-top: 20px;
+  max-height: 58px;
+  border: 1px solid black;
+  box-shadow: -2px 2px 2px black;
+  background-color: var(--ligth-color);
+  border-radius: 3px;
+  padding: 5px;
+}
+
+#historik_wrapper_trans {
+  width: 85%;
+  height: 100%;
+  margin-top: 20px;
+  border: 1px solid grey;
 }
