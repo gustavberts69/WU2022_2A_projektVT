@@ -399,8 +399,20 @@ footer {
 }
 
 #historik_wrapper_trans {
-  width: 85%;
+  width: 100%;
   height: 100%;
-  margin-top: 20px;
-  border: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#historik_trans {
+margin-top: 20px;
+border: 1px solid grey;
+width: 85%;
+height: 100%;
+}
+
+.trans_item {
+  list-style: none;
 }
