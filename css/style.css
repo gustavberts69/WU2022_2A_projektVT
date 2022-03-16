@@ -27,6 +27,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 5%;
 }
 
 #settings {
@@ -303,7 +304,7 @@ footer {
 }
 
 #fond_lista {
-  margin-bottom: 100px;
+  margin-bottom: 18%px;
 }
 
 .ekonomi_lista {
@@ -404,15 +405,70 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  margin-bottom: 18%;
 }
 
-#historik_trans {
+.historik_trans {
 margin-top: 20px;
-border: 1px solid grey;
 width: 85%;
 height: 100%;
 }
 
 .trans_item {
   list-style: none;
+  padding: 3px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  border: 1px solid grey;
+  margin-bottom: 10px;
+}
+
+.date_trans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30px;
+  height: 35px;
+}
+
+.vertikal_linje {
+  width: 1px;
+  height: 33px;
+  background-color: grey;
+  margin-left: 5px;
+  margin-right: 20px;
+}
+
+.trans_info {
+  display: flex;
+  flex-direction: row;
+}
+
+.arrow_trans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 33px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.trans_konto_sender {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trans_amount {
+  font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 585px) {
+  footer {
+    top: 0;
+    bottom: auto;
+  }
 }
