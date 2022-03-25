@@ -27,11 +27,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 5%;
 }
 
 #settings {
-  margin-right: 20px;
+  margin-right: 3%;
 } 
 
 #main_container {
@@ -81,15 +80,16 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
   height: max-content;
   width: 100%;
 }
 
 .nyhet_container {
   height: 400px;
-  width: 500px;
+  width: 450px;
   border-radius: 10px;
-  margin-inline-start: 40px;
+  margin-inline-start: 3%;
   margin-bottom: 5vh;
   display: flex;
   justify-content: center;
@@ -127,6 +127,10 @@ body {
 
 footer {
   position: fixed;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -466,9 +470,55 @@ height: 100%;
   font-size: 0.8rem;
 }
 
+#header_desktop {
+  display: none;
+  height: 0;
+}
+
+#vad_som_händer {
+  display: none;
+}
+
+#hem_knapp2 {
+  margin-left: 8%;
+}
+
+.desktop_btn {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
 @media only screen and (min-width: 585px) {
   footer {
+    display: none;
+    height: 0;
+  }
+  #header_container {
+    display: none;
+    height: 0;
+  }
+  #header_desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background-color: var(--dark-color);
     top: 0;
-    bottom: auto;
+  }
+  .nyhet_main_container {
+    justify-content: center;
+    align-items: center;
+  }
+  .nyhet_container {
+    margin: 0;
+  }
+  #vad_som_händer {
+    display: block;
+  }
+  #nyhet_4 { 
+    margin-bottom: 5%;
   }
 }
