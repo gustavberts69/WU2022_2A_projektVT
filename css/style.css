@@ -293,6 +293,7 @@ footer {
   align-items: center;
   flex-direction: column;
   height: 100%;
+  width: 100%;
 }
 
 .ekonomi_lista_wrapper {
