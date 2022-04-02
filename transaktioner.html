@@ -10,6 +10,36 @@
 </head>
 <body>
     <!----------------------------HEADER---------------------------->
+    <section id="header_desktop">
+      <div  id="hem_knapp2" class="desktop_btn">
+      <button class="button">
+        <a href="index.html"><img  src="img\2x\outline_home_white_24dp.png" alt="hem knapp"></a>
+      </button>
+      <p>Hem</p>
+    </div>
+    <div class="desktop_btn">
+      <button class="button" id="konto_knapp">
+        <a href="konto.html"><img  src="img\2x\outline_account_circle_white_24dp.png" alt="ditt konto"></a>
+      </button>
+      <p>Ditt konto</p>
+    </div>
+      <div class="desktop_btn">
+      <button class="button" id="sök_knapp">
+        <a href="sök.html"><img src="img\2x\outline_search_white_24dp.png" alt="sök knapp"></a>
+      </button>
+      <p>Sök</p>
+    </div>
+    <div class="desktop_btn">
+      <button onclick="openMenu()" class="button" id="meny_knapp">
+        <img  id="meny" src="img\2x\outline_menu_white_24dp.png" alt="meny">
+      </button>
+      <p>Meny</p>
+    </div>
+      <div id="settings">
+        <img src="img\1x\outline_settings_white_24dp.png" alt="settings">
+      </div>
+    </section>
+
     <header id="header_konto">
       <h1 class="headline">Ditt konto</h1>
       <ul id="konto_header">
@@ -19,6 +49,7 @@
       </ul>
     </header>
 
+    
     <!----------------------------MAIN---------------------------->
     <section id="main_wrapper_trans">
       <ul id="trans_list">
@@ -205,22 +236,31 @@
     </section>
     <!----------------------------FOOTER---------------------------->
     <footer>
-      <div id="menu_bar_container">
-        <div class="button" id="hem_knapp">
+      <div class="mobile_btn">
+        <button class="button">
           <a href="index.html"><img  src="img\2x\outline_home_white_24dp.png" alt="hem knapp"></a>
-        </div>
+        </button>
+        <p>Hem</p>
+      </div>
+      <div class="mobile_btn">
         <button class="button" id="konto_knapp">
           <a href="konto.html"><img  src="img\2x\outline_account_circle_white_24dp.png" alt="ditt konto"></a>
-  
         </button>
-        <div class="button" id="sök_knapp">
+        <p>Ditt konto</p>
+      </div>
+        <div class="mobile_btn">
+        <button class="button" id="sök_knapp">
           <a href="sök.html"><img src="img\2x\outline_search_white_24dp.png" alt="sök knapp"></a>
-        </div>
+        </button>
+        <p>Sök</p>
+      </div>
+      <div class="mobile_btn">
         <button onclick="openMenu()" class="button" id="meny_knapp">
           <img  id="meny" src="img\2x\outline_menu_white_24dp.png" alt="meny">
         </button>
+        <p>Meny</p>
         <div id="menu_content">
-          <div class="closebtn" onclick="closeMenu()" >bruh</div>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()" >bruh</a>
   
           <ul id="menu_options">
             <li class="menu_item">Kundservice</li>

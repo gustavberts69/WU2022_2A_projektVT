@@ -309,7 +309,7 @@ footer {
 }
 
 #fond_lista {
-  margin-bottom: 18%px;
+  margin-bottom: 22%;
 }
 
 .ekonomi_lista {
@@ -520,6 +520,9 @@ height: 100%;
     display: block;
   }
   #nyhet_4 { 
+    margin-bottom: 5%;
+  }
+  #fond_lista {
     margin-bottom: 5%;
   }
 }

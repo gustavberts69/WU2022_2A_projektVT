@@ -30,21 +30,29 @@
   </section>
 <!----------------------------FOOTER---------------------------->
 <footer>
-  <div id="menu_bar_container">
-    <div class="button" id="hem_knapp">
+  <div class="mobile_btn">
+    <button class="button">
       <a href="index.html"><img  src="img\2x\outline_home_white_24dp.png" alt="hem knapp"></a>
-    </div>
+    </button>
+    <p>Hem</p>
+  </div>
+  <div class="mobile_btn">
     <button class="button" id="konto_knapp">
       <a href="konto.html"><img  src="img\2x\outline_account_circle_white_24dp.png" alt="ditt konto"></a>
-
     </button>
-    <div class="button" id="sök_knapp">
-      <img  src="img\2x\outline_search_white_24dp.png" alt="sök knapp">
-      <link rel="sök sida" href="sök.html">
-    </div>
+    <p>Ditt konto</p>
+  </div>
+    <div class="mobile_btn">
+    <button class="button" id="sök_knapp">
+      <a href="sök.html"><img src="img\2x\outline_search_white_24dp.png" alt="sök knapp"></a>
+    </button>
+    <p>Sök</p>
+  </div>
+  <div class="mobile_btn">
     <button onclick="openMenu()" class="button" id="meny_knapp">
       <img  id="meny" src="img\2x\outline_menu_white_24dp.png" alt="meny">
     </button>
+    <p>Meny</p>
     <div id="menu_content">
       <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()" >bruh</a>
 
@@ -59,6 +67,5 @@
     </div>
   </div>
 </footer>
-
 </body>
 </html>
