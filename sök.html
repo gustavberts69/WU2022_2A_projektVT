@@ -31,24 +31,6 @@
 <!----------------------------FOOTER---------------------------->
 <footer>
   <div class="mobile_btn">
-    <button class="button">
-      <a href="index.html"><img  src="img\2x\outline_home_white_24dp.png" alt="hem knapp"></a>
-    </button>
-    <p>Hem</p>
-  </div>
-  <div class="mobile_btn">
-    <button class="button" id="konto_knapp">
-      <a href="konto.html"><img  src="img\2x\outline_account_circle_white_24dp.png" alt="ditt konto"></a>
-    </button>
-    <p>Ditt konto</p>
-  </div>
-    <div class="mobile_btn">
-    <button class="button" id="sök_knapp">
-      <a href="sök.html"><img src="img\2x\outline_search_white_24dp.png" alt="sök knapp"></a>
-    </button>
-    <p>Sök</p>
-  </div>
-  <div class="mobile_btn">
     <button onclick="openMenu()" class="button" id="meny_knapp">
       <img  id="meny" src="img\2x\outline_menu_white_24dp.png" alt="meny">
     </button>
@@ -57,10 +39,24 @@
       <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()" >bruh</a>
 
       <ul id="menu_options">
-        <li class="menu_item">Kundservice</li>
-        <li class="menu_item">Spara pengar</li>
-        <li class="menu_item">Hitta fonder</li>
-        <li class="menu_item">Hitta aktier</li>
+        <div class="mobile_btn">
+          <button class="button">
+            <a href="index.html"><img  src="img\2x\outline_home_white_24dp.png" alt="hem knapp"></a>
+          </button>
+          <p>Hem</p>
+        </div>
+        <div class="mobile_btn">
+          <button class="button" id="konto_knapp">
+            <a href="konto.html"><img  src="img\2x\outline_account_circle_white_24dp.png" alt="ditt konto"></a>
+          </button>
+          <p>Ditt konto</p>
+        </div>
+          <div class="mobile_btn">
+          <button class="button" id="sök_knapp">
+            <a href="sök.html"><img src="img\2x\outline_search_white_24dp.png" alt="sök knapp"></a>
+          </button>
+          <p>Sök</p>
+        </div>
       </ul>
       <script src="js/script.js"></script>
 
